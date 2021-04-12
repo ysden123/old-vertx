@@ -24,8 +24,9 @@ public class LongService extends AbstractVerticle {
 
     private void handler(Message<String> message) {
         logger.info("==>handler");
-        vertx.setTimer(60_000, l -> {
+//        vertx.setTimer(60_000, l -> {
 //        vertx.setTimer(500, l -> {
+        vertx.setTimer(3_000, l -> {
             logger.info("completed");
             var response = message.body() + " handled";
             message.reply(response);

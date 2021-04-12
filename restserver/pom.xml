@@ -7,7 +7,7 @@
 
     <groupId>com.stulsoft</groupId>
     <artifactId>restserver</artifactId>
-    <packaging>pom</packaging>
+    <packaging>jar</packaging>
     <version>1.0.0</version>
     <name>REST server on old Vertx</name>
 
